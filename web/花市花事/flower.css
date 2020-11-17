@@ -1,0 +1,168 @@
+*{
+	margin:0;
+	padding: 0;
+}
+ol,ul{
+	list-style-type: none;
+}
+a{
+	color:#666;
+	text-decoration:none;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+body{
+	font-family: 方正舒体;
+	background-color: #F0F8FF; 
+}
+/*测试*/
+.container{
+	width: 1280px;
+	margin: 0px auto;
+}
+/*设置页面头部样式	*/
+#header{
+	height: 20px;	
+}
+#header .container-left{
+	color: #FF6633;
+	font-size: 16px;
+	float: left;
+}
+#header ul li{
+	float: left;
+}
+#header li a{
+	color: #B2B2B2;
+	font-size: 16px;
+	border-right: 1px solid #B2B2B2;
+	padding: 0px 15px;
+}
+#header li :hover{
+	color: #FF0000;
+}
+/*头部	*/
+#top{
+	height: 100px;
+	background: white;
+}
+#top .logo img{
+    height: 90px;
+    width: 90px;
+}
+#top .logo{
+	float: left;
+}
+#top ul li{
+	padding: 0px 5px;
+	float:left;
+}
+#top ul .l1{
+	font-size: 20px;
+	padding: 12px 5px;
+}
+#top ul .l2{
+	font-size: 30px; 
+}
+#top .top-right{
+padding-top: 25px;
+}
+#top .top-right .botton{
+	background: #FF6600;
+	width: 40px;
+	height: 30px;
+	border-color: #FF9966;
+}
+#top .top-right .sousuo{
+	width: 200px;
+	height: 29px;
+	border: 1px solid #FF9966;
+}
+/*导航*/
+#nav{
+	height: 100px;
+	border-bottom: 1px solid #999999;
+}
+#nav li{
+	float: left;
+	margin:0px 15px;
+	line-height: 100px;
+}
+#nav li a{
+	font-size: 35px;
+	font-weight: bold;
+	padding: 0px 10px;
+
+}
+#nav li a:hover{
+	color:#CC9933;
+}
+/*花市花事*/
+#flower img{
+	width: 100%;
+	height:500px;
+}
+#flower .container{
+	background-color: white;
+
+}
+#flower .ftop{
+text-align: center;
+}
+#flower .ftop img{
+	width: 860px;
+	height: 300px;
+}
+#flower li{
+	float: left;
+	padding: 20px;
+	width: 550px;
+    height: 320px;
+    margin-left: 40px;
+}
+#flower .f img{
+	height: 290px;
+	width:300px;
+}
+#flower .t img{
+	height: 225px;
+	width:300px;
+}
+#flower .container .ft{
+    width: 600px;
+    height: 420px;
+}
+#flower .t1{
+	position: absolute;
+	top: 1080px;
+	left:480px;
+}
+#flower .t2{
+	position: absolute;
+	top: 1080px;
+	left:1100px;
+}
+#flower .t3{
+	position: absolute;
+	top: 1450px;
+	left:480px;
+}
+#flower .t4{
+	position: absolute;
+	top: 1450px;
+	left:1100px;
+}
+#flower .t5{
+	position: absolute;
+	top: 1820px;
+	left:480px;
+}
+#flower .t6{
+	position: absolute;
+	top: 1820px;
+	left:1100px;
+}

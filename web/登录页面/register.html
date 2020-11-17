@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>哇哦花卉市场登录页</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+	<script type="text/javascript" src="register.js"></script>
+</head>
+<body>
+	<!-- 页面的头部-->
+	<div id="header">
+		<div class="container">
+			<div class="container-left left">欢迎来到哇哦花卉市场!</div>
+			<ul class="right">
+				<li><a href="register.html">立即登录</a></li>
+				<li><a href="../注册页面/post.html">免费注册</a></li>
+				<li><a href="../客服中心/customer.html">客服中心</a></li>
+				<li><a href="#">帮助中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 顶部 -->
+	<div id="top">
+		<div class="container">
+			<div class="top-left left">
+				<div class="logo"><img src="img/1.jpg" alt="1"></div>
+				<ul>
+				 	<li class="l1">让鲜花开遍世界</li>
+				 	<li class="l2">让世界更美丽</li>
+				</ul> 
+			</div>
+			<div class="top-right right">
+					<input type="text" class="sousuo" ><input type="button" class="botton" value="搜索">
+			</div>
+		</div>
+	</div>
+	<!-- 导航 -->
+	<div id="nav">
+		<div class="container">
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="../关于我们/about.html">关于我们</a></li>
+				<li><a href="../花市花事/flower.html">花市.花事</a></li>
+				<li><a href="../行情报价/price.html">行情报价</a></li>
+				<li><a href="../养花知识/know.html">养花知识</a></li>
+				<li><a href="../图片库/image.html">图片库</a></li>
+				<li><a href="../留言板/bbs.html">留言板</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 登录 -->
+	<div id="reg">
+		<div class="container">
+			<div class="reg-left left">
+				<img src="img/res.png" alt="res">
+				<div class="zhuce"><a href="../注册页面/post.html">立即注册</a></div>
+			</div>
+			<div class="reg-right right">
+				<form action="../index.html" onsubmit="return mycheck()" onreset="return myreset()">
+		       <h1>用户登录</h1>
+		       <div class="lo1">用户名或手机号：<input type="text" id="username"></div>
+		       <div class="lo2">密码：<input type="password" id="pwd"></div>
+		       <input type="submit" value="立即登录" id="loon">
+		       <input type="reset" value="重置" id="loon">
+	           </form>
+	           <div class="zhushi">
+	           	注：1、用户名不能为空<br>
+	           	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2、密码必须为六位
+	           </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

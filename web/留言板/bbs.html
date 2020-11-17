@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>哇哦花卉市场留言板页</title>
+	<link rel="stylesheet" type="text/css" href="bbs.css">
+</head>
+<body>
+	<!-- 页面的头部-->
+	<div id="header">
+		<div class="container">
+			<div class="container-left left">欢迎来到哇哦花卉市场!</div>
+			<ul class="right">
+				<li><a href="../登录页面/register.html">立即登录</a></li>
+				<li><a href="../注册页面/post.html">免费注册</a></li>
+				<li><a href="../客服中心/customer.html">客服中心</a></li>
+				<li><a href="#">帮助中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 顶部 -->
+	<div id="top">
+		<div class="container">
+			<div class="top-left left">
+				<div class="logo"><img src="img/1.jpg" alt="1"></div>
+				<ul>
+				 	<li class="l1">让鲜花开遍世界</li>
+				 	<li class="l2">让世界更美丽</li>
+				</ul> 
+			</div>
+			<div class="top-right right">
+					<input type="text" class="sousuo" ><input type="button" class="botton" value="搜索">
+			</div>
+		</div>
+	</div>
+	<!-- 导航 -->
+	<div id="nav">
+		<div class="container">
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="../关于我们/about.html">关于我们</a></li>
+				<li><a href="../花市花事/flower.html">花市.花事</a></li>
+				<li><a href="../行情报价/price.html">行情报价</a></li>
+				<li><a href="../养花知识/know.html">养花知识</a></li>
+				<li><a href="../图片库/image.html">图片库</a></li>
+				<li><a href="bbs.html">留言板</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 留言板-->
+	<div id="bbs">
+		<img src="img/p1.jpg" alt="p1">
+		<div  class="container">
+		<h1>留言板</h1>
+		<h2>留言详情：</h2>
+        <div id="div2">
+            
+        </div>
+		<div id="div1">
+            姓名：<input type="text" name="user" id="username"  /><br />
+            内容：<textarea rows="10" cols="40" id="info">
+                
+            </textarea><br>
+            <input type="button" value="留言" id="btn">
+        </div>
+        
+    <script type="text/javascript">
+        var userInput = document.getElementById("username");
+        var infoInput = document.getElementById("info");
+        var btn = document.getElementById("btn");
+        var div2 = document.getElementById("div2");
+        btn.onclick = function(){    
+            var user = userInput.value;
+            var info = infoInput.value;
+            var divUser = document.createElement("div");
+            divUser.innerText = user;
+            divUser.style.color = "darkgrey";
+            divUser.style.width = "100%";
+            divUser.style.height = "20px";
+            div2.appendChild(divUser);
+            
+            var divInfo = document.createElement("div");
+            divInfo.innerText = info;
+            // divInfo.style.color = "antiquewhite";
+            divInfo.style.width = "100%";
+            divInfo.style.height = "40px";
+            div2.appendChild(divInfo);
+            
+            var del = document.createElement("span");
+            del.innerText = "删除";
+            del.style.float = "right";
+            divInfo.appendChild(del);           
+            del.onclick = function(){
+                divUser.remove();
+                divInfo.remove();
+                del.remove();
+            }
+        }
+    </script>
+		</div>
+	</div>
+</body>
+</html>
